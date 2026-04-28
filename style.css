@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+p {
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.min, .max {
+    width: 250px;
+    height: 40px;
+    border-radius: 14px;
+    margin-inline: 10px;
+    background-color: #FFFFFF40;
+    color: #FFFFFF;
+    border: none;
+}
+
+input::placeholder {
+    font-size: 18px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+button {
+    width: 172px;
+    height: 35px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background: #bed647;
+    box-shadow: 0px 0px 10px #bed647;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+button:hover {
+    background-color: #a7c125;
+    color: #000;
+    box-shadow: 0px 0px 10px #d6f056;
+    transform: translateY(-4px);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .min, .max {
+       width: 100%;
+    }
+
+    .container {
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        width: 150px;
+        height: 30px;
+        font-size: 16px;
+        color: #FFFFFF;
+        background: #bed647;
+        box-shadow: 0px 0px 10px #bed647;
+    }
+}
